@@ -29,7 +29,7 @@ signed main(){
                 cin>>J;
                 if(q[group_vector[J]].empty())
                     queuing_condition.push_back(group_vector[J]);
-                q[group_vector[J]].push(J);
+                    q[group_vector[J]].push(J);
             }
             else{
                 if (queuing_condition.empty()){
@@ -47,7 +47,7 @@ signed main(){
         while(!queuing_condition.empty()) {
             while(!q[queuing_condition.front()].empty())
                 q[queuing_condition.front()].pop();
-            queuing_condition.pop_front();
+                queuing_condition.pop_front();
         }
     }
 }  
