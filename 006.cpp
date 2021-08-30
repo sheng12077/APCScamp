@@ -6,8 +6,8 @@ signed main(){
     cin.tie(0);
     cout.tie(0);
 
-	string s;
-	cin>>s;
+    string s;
+    cin>>s;
     const int n=s.length();
     auto getlen=[&](int l,int r){               //以l和r為中心點(l和r可以一樣，如第15行)
         while (l>=0 and r<n and s[l]==s[r]){    //當相對應的字元相同就繼續往兩邊擴展
