@@ -30,16 +30,16 @@ signed main(){
 			while(deq.front().first!=top){
 				pair<int,int>tmp=deq.front();
 				deq.pop_front();
-				deq.push_back(tmp);
+				deq.push_back(tmp);             //有更優先的
 			}
 			if(deq.front().second==m){
 				ans++;
-				flag=false;
+				flag=false;                     //輪到自己
 			}
 			else{
 				deq.pop_front();
-				ans++;
-			}
+				ans++;                         //沒更優先的，也不是自己
+			}                    
 		}
 		cout<<ans<<"\n";
 	}
