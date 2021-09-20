@@ -1,8 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
-
  
 int n,q,l,j,l1,l2;
 string s;
